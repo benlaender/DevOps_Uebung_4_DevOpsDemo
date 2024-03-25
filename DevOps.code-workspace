@@ -17,6 +17,7 @@
 			"**/node_modules",
 			"**/.metadata",
 			"**/archetype-resources"
-		]
+		],
+		"java.project.explorer.showNonJavaResources": false
 	}
 }
