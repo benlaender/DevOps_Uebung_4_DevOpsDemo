@@ -1,4 +1,4 @@
-package ch.zhaw.iwi.devops.demo
+package ch.zhaw.iwi.devops.demo;
 
 public class MathLib {
     public static boolean isEven(int value){
