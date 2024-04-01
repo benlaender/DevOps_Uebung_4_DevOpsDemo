@@ -77,7 +77,7 @@ public class ToDoController {
         return this.todos.get(key);
     }
 
-    @PostMapping("d")
+    @PostMapping("/services/todo")
     public void createTodo(@RequestBody ToDo todo) {
         var newId = this.todos.keySet().stream().max(Comparator.naturalOrder()).orElse(0) + 1;
         todo.setId(newId);
