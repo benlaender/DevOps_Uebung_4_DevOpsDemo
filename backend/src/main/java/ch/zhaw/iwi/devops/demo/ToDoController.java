@@ -1,6 +1,7 @@
 package ch.zhaw.iwi.devops.demo;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @CrossOrigin
 @RestController
@@ -30,6 +33,7 @@ public class ToDoController {
         this.todos.put(3,new ToDo(3, "Unit Tests", "Neues Projekt mit Unit Tests starten"));
         this.todos.put(4,new ToDo(4, "Deployment", "Jede Woche!"));
         this.todos.put(5,new ToDo(5, "Organigramm", "Löschen"));
+        this.todos.put(6,new ToDo(6, "Java bodtlben", "Version 21 zum Laufen bringen!"));
         System.out.println("Init Data");
     }
 
@@ -48,6 +52,11 @@ public class ToDoController {
     public int count() {
         return this.todos.size();
     }
+    @GetMapping("/bodtlben")
+    public Collection<ToDo> bodtlben() {
+        return this.todos.values();
+    }
+    
 
     @GetMapping("/services/todo")
     public List<PathListEntry<Integer>> todo() {
@@ -68,7 +77,7 @@ public class ToDoController {
         return this.todos.get(key);
     }
 
-    @PostMapping("/services/todo")
+    @PostMapping("d")
     public void createTodo(@RequestBody ToDo todo) {
         var newId = this.todos.keySet().stream().max(Comparator.naturalOrder()).orElse(0) + 1;
         todo.setId(newId);
@@ -86,5 +95,24 @@ public class ToDoController {
         return this.todos.remove(key);
     }
 
+/*    @DeleteMapping("/bodtlben/delete")
+    public void lessTodo(String counter) {
+        
+       if(counter <= 5)
+        {
+            for (int i = 1;i<counter;i++)
+            {
+            return this.todos.remove(i);
+            }
+        }
+        else
+        {
+            for (int i = 1;i<7;i++)
+            {
+                return this.todos.remove(i);
+            }
+      }
 
+        return null;
+    }*/
 }
