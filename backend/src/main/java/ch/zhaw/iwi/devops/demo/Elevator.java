@@ -13,6 +13,10 @@ public class Elevator
         {
             return "Door opens";
         }
+        else if (Start < Ruf)
+        {
+            return "Up";
+        }
         return "null";
     }
 }
