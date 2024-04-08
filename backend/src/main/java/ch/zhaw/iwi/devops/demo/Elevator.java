@@ -17,6 +17,13 @@ public class Elevator
         {
             return "Up";
         }
-        return "null";
+        else if (Start > Ruf)
+        {
+            return "Down";
+        }
+        else
+        {
+            return "null";
+        }
     }
 }
