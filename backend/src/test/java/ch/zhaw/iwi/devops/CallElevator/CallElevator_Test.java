@@ -18,6 +18,13 @@ public class CallElevator_Test
     public void Test2()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Up", Button.call(0, 2));
+        Assertions.assertEquals("Up", Button.call(1, 2));
+    }
+
+    @Test
+    public void Test3()
+    {
+        Elevator Button = new Elevator();
+        Assertions.assertEquals("Down", Button.call(3, -1));
     }
 }
