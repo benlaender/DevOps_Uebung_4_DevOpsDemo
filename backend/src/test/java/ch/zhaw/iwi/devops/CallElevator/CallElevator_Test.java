@@ -53,6 +53,6 @@ public class CallElevator_Test
     public void Test7()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Down", Button.call(-2, 500));
+        Assertions.assertEquals("Wrong building", Button.call(-2, 500));
     }
 }

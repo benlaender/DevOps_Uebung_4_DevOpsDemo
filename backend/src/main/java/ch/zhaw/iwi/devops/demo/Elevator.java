@@ -9,7 +9,11 @@ public class Elevator
             Start = 0;
         }
 
-        if(Start == Ruf)
+        if(Ruf > 5 | Ruf < -2)
+        {
+            return "Wrong building";
+        }
+        else if(Start == Ruf)
         {
             return "Door opens";
         }
