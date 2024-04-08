@@ -27,4 +27,11 @@ public class CallElevator_Test
         Elevator Button = new Elevator();
         Assertions.assertEquals("Down", Button.call(3, -1));
     }
+
+    @Test
+    public void Test4()
+    {
+        Elevator Button = new Elevator();
+        Assertions.assertEquals("Down", Button.call(500, -1));
+    }
 }
