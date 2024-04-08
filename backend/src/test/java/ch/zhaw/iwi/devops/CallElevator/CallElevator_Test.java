@@ -14,5 +14,10 @@ public class CallElevator_Test
         Assertions.assertEquals("Door opens", Button.call(0, 0));
     }
 
-    
+    @Test
+    public void Test2()
+    {
+        Elevator Button = new Elevator();
+        Assertions.assertEquals("Up", Button.call(0, 2));
+    }
 }
