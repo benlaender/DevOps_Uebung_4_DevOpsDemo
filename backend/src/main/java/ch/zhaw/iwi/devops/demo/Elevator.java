@@ -21,7 +21,7 @@ public class Elevator
         {
             return "Up";
         }
-        else if (Start > Ruf)
+        else
         {
             return "Down";
         }
