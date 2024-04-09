@@ -25,9 +25,5 @@ public class Elevator
         {
             return "Down";
         }
-        else
-        {
-            return "null";
-        }
     }
 }
