@@ -15,42 +15,42 @@ class CallElevator_Test
     }
 
     @Test
-    private void Test2()
+    void Test2()
     {
         Elevator Button = new Elevator();
         Assertions.assertEquals("Up", Button.call(1, 2));
     }
 
     @Test
-    private void Test3()
+    void Test3()
     {
         Elevator Button = new Elevator();
         Assertions.assertEquals("Down", Button.call(3, -1));
     }
 
     @Test
-    private void Test4()
+    void Test4()
     {
         Elevator Button = new Elevator();
         Assertions.assertEquals("Down", Button.call(500, -1));
     }
 
     @Test
-    private void Test5()
+    void Test5()
     {
         Elevator Button = new Elevator();
         Assertions.assertEquals("Down", Button.call(-100, -1));
     }
 
     @Test
-    private void Test6()
+    void Test6()
     {
         Elevator Button = new Elevator();
         Assertions.assertNotEquals("Down", Button.call(300,1));
     }
 
     @Test
-    private void Test7()
+    void Test7()
     {
         Elevator Button = new Elevator();
         Assertions.assertEquals("Wrong building", Button.call(-2, 500));
