@@ -4,12 +4,12 @@ public class Elevator
 {
     public String call (int start, int ruf)
     {
-        if(start > 5 | start < -2)
+        if(start > 5 || start < -2)
         {
             start = 0;
         }
 
-        if(ruf > 5 | ruf < -2)
+        if(ruf > 5 || ruf < -2)
         {
             return "Wrong building";
         }
