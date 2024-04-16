@@ -2,22 +2,22 @@ package ch.zhaw.iwi.devops.demo;
 
 public class Elevator 
 {
-    public String call (int Start, int Ruf)
+    public String call (int start, int ruf)
     {
-        if(Start > 5 | Start < -2)
+        if(start > 5 | start < -2)
         {
-            Start = 0;
+            start = 0;
         }
 
-        if(Ruf > 5 | Ruf < -2)
+        if(ruf > 5 | ruf < -2)
         {
             return "Wrong building";
         }
-        else if(Start == Ruf)
+        else if(start == ruf)
         {
             return "Door opens";
         }
-        else if (Start < Ruf)
+        else if (start < ruf)
         {
             return "Up";
         }
