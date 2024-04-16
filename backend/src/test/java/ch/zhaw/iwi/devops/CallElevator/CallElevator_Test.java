@@ -8,7 +8,7 @@ import ch.zhaw.iwi.devops.demo.Elevator;
 class CallElevator_Test
 {
     @Test
-    private void Test1()
+    void Test1()
     {
         Elevator Button = new Elevator();
         Assertions.assertEquals("Door opens", Button.call(0, 0));
