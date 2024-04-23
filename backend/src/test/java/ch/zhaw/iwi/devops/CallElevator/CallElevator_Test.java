@@ -60,6 +60,6 @@ class CallElevator_Test
     void Test8()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Downwards", Button.call(1, 2));
+        Assertions.assertEquals("Upwards", Button.call(1, 2));
     }
 }
