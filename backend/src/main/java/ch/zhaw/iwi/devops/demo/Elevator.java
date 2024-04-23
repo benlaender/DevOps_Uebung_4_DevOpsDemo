@@ -19,11 +19,11 @@ public class Elevator
         }
         else if (start < ruf)
         {
-            return "Up";
+            return "Upwards";
         }
         else
         {
-            return "Down";
+            return "Downwards";
         }
     }
 }
