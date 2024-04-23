@@ -18,35 +18,35 @@ class CallElevator_Test
     void Test2()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Up", Button.call(1, 2));
+        Assertions.assertEquals("Upwards", Button.call(1, 2));
     }
 
     @Test
     void Test3()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Down", Button.call(3, -1));
+        Assertions.assertEquals("Downwards", Button.call(3, -1));
     }
 
     @Test
     void Test4()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Down", Button.call(500, -1));
+        Assertions.assertEquals("Downwards", Button.call(500, -1));
     }
 
     @Test
     void Test5()
     {
         Elevator Button = new Elevator();
-        Assertions.assertEquals("Down", Button.call(-100, -1));
+        Assertions.assertEquals("Downwards", Button.call(-100, -1));
     }
 
     @Test
     void Test6()
     {
         Elevator Button = new Elevator();
-        Assertions.assertNotEquals("Down", Button.call(300,1));
+        Assertions.assertNotEquals("Downwards", Button.call(300,1));
     }
 
     @Test
