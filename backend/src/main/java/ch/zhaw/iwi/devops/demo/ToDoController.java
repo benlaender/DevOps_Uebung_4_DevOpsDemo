@@ -30,7 +30,7 @@ public class ToDoController {
     public void init() {
         this.todos.put(1,new ToDo(1, "Neuer Job", "5 DevOps Engineers einstellen"));
         this.todos.put(2,new ToDo(2, "Geschäftsleitung", "Mit Präsentation von DevOps überzeugen"));
-        this.todos.put(3,new ToDo(3, "Unit Tests", "Neues Projekt mit Unit Tests starten"));
+        this.todos.put(3,new ToDo(3, "DevOpsDemo Jenkins", "Diese Projekt läuft jetzt auf über Docker und Jenkins!"));
         this.todos.put(4,new ToDo(4, "Deployment", "Jede Woche!"));
         this.todos.put(5,new ToDo(5, "Organigramm", "Löschen"));
         this.todos.put(6,new ToDo(6, "Java bodtlben", "Version 21 zum Laufen bringen!"));
